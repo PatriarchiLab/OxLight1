@@ -78,7 +78,7 @@ end
 if Exp == 0
     [Tau,Yplot] = onePhaseAssoFitting(timeZero,X*frameTime,mean(GnormValue));
     hold on;
-    plot(X*frameTime+timeZero*frameTime,Yplot,'LineWidth',2);
+    plot(X*frameTime+timeZero*frameTime*iNterval,Yplot,'LineWidth',2);
 else
     [Tau,Yplot] = onePhaseDissoFitting(timeZero,X*frameTime,mean(GnormValue));
     hold on;
